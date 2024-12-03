@@ -22,7 +22,7 @@ if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
 
     # Slice the data to only use rows 1 to 6 and columns 3 to 8
-    data = data.iloc[1:8, 1:7]  # Rows 1 to 6 (index 1:7) and Columns 3 to 8 (index 2:8)
+    data = data.iloc[1:7, 1:7]  # Rows 1 to 6 (index 1:7) and Columns 3 to 8 (index 2:8)
 
     st.write("### Data Preview")
     st.dataframe(data)
